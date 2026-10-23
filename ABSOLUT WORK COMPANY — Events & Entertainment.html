@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ABSOLUT WORK COMPANY — Events &amp; Entertainment</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0b0a;--surface:#161412;--text:#f1ece3;--muted:#a79f92;--gold:#c9a45c;--line:#2a2622;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf7f1;--surface:#f0eadf;--text:#1b1814;--muted:#6d6558;--gold:#8f6b25;--line:#ddd3c1}}
+:root[data-theme="light"]{--bg:#faf7f1;--surface:#f0eadf;--text:#1b1814;--muted:#6d6558;--gold:#8f6b25;--line:#ddd3c1}
+:root[data-theme="dark"]{--bg:#0c0b0a;--surface:#161412;--text:#f1ece3;--muted:#a79f92;--gold:#c9a45c;--line:#2a2622}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:300 16px/1.7 Montserrat,"Helvetica Neue",Arial,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:500;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.logo{font:600 15px "Cormorant Garamond",Georgia,serif;letter-spacing:.28em}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+nav a:hover{color:var(--gold)}
+.hero{position:relative;min-height:82vh;display:grid;place-items:center;text-align:center;overflow:hidden;
+background:radial-gradient(ellipse at 50% 0,rgba(201,164,92,.28),transparent 60%),radial-gradient(circle at 15% 80%,rgba(120,60,90,.35),transparent 45%),radial-gradient(circle at 85% 70%,rgba(40,70,120,.35),transparent 45%),var(--bg)}
+.hero:before,.hero:after{content:"";position:absolute;top:-10%;width:180px;height:120%;background:linear-gradient(180deg,rgba(255,235,190,.22),transparent 75%);filter:blur(6px)}
+.hero:before{left:18%;transform:rotate(18deg)}.hero:after{right:18%;transform:rotate(-18deg)}
+.hero div{position:relative;z-index:1;padding:60px 24px}
+.eyebrow{font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(40px,8vw,92px);line-height:1.05;margin:18px 0}
+.hero p{max-width:560px;margin:0 auto;color:var(--muted)}
+section{padding:90px 0}
+.title{text-align:center;margin-bottom:54px}
+.title h2{font-size:clamp(30px,5vw,48px);margin-top:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--bg);padding:38px 30px}
+.card i{font:normal 28px "Cormorant Garamond",serif;color:var(--gold)}
+.card h3{font-size:26px;margin:10px 0}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;grid-auto-flow:dense;gap:12px}
+.ph{position:relative;margin:0;overflow:hidden;border-radius:2px;background:radial-gradient(circle at var(--x,50%) 0,var(--a) 0,transparent 62%),radial-gradient(circle at 20% 100%,var(--b),transparent 55%),#14110f}
+.ph:before{content:"";position:absolute;inset:0;background:conic-gradient(from 200deg at 50% -10%,transparent 0 8%,rgba(255,240,200,.16) 10% 14%,transparent 16% 24%,rgba(255,240,200,.12) 26% 29%,transparent 31%)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:16px;bottom:14px;font:500 22px "Cormorant Garamond",Georgia,serif;text-shadow:0 2px 12px #000;color:#f6efe2}
+.ph small{display:block;font:400 10px Montserrat,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.ph b{position:absolute;top:14px;right:16px;font-size:30px;font-weight:400;opacity:.9}.w2{grid-column:span 2}.h2{grid-row:span 2}
+.about{background:var(--surface)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p{color:var(--muted)}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;margin-top:26px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.list span:before{content:"◆ ";color:var(--gold);font-size:9px}
+footer{padding:70px 0 50px;text-align:center;border-top:1px solid var(--line)}
+footer .logo{font-size:20px}
+footer p{color:var(--muted);margin:14px auto;max-width:520px;font-size:14px}
+footer a{color:var(--gold)}
+@media(max-width:820px){.grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.about .wrap{grid-template-columns:1fr}nav ul{display:none}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<header class="wrap"><nav><span class="logo">ABSOLUT WORK COMPANY</span><ul><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#celebrations">Occasions</a></li><li><a href="#about">About</a></li></ul></nav></header>
+
+<div class="hero"><div>
+<span class="eyebrow">Events &amp; Entertainment</span>
+<h1>Moments Worth<br>Remembering</h1>
+<p>We design and stage elegant celebrations, spectacular shows and unforgettable brand experiences.</p>
+</div></div>
+
+<section id="services"><div class="wrap">
+<div class="title"><span class="eyebrow">What we do</span><h2>Our Services</h2></div>
+<div class="cards">
+<div class="card"><i>01</i><h3>Weddings &amp; Celebrations</h3><p>Grand mandaps, sangeet nights, receptions and private parties crafted with grace.</p></div>
+<div class="card"><i>02</i><h3>Corporate Events</h3><p>Conferences, award nights, product launches and team gatherings with polish.</p></div>
+<div class="card"><i>03</i><h3>Concerts &amp; Live Shows</h3><p>Artist management, stage production and crowd experiences from intimate to arena.</p></div>
+<div class="card"><i>04</i><h3>Stage, Sound &amp; Light</h3><p>Immersive lighting design, LED walls, truss and professional audio.</p></div>
+<div class="card"><i>05</i><h3>Décor &amp; Styling</h3><p>Floral installations, themed sets and bespoke styling that transform a venue.</p></div>
+<div class="card"><i>06</i><h3>Anchors &amp; Performers</h3><p>Hosts, DJs, dancers, live bands and special acts to keep the energy alive.</p></div>
+</div></div></section>
+
+<section id="gallery" style="padding-top:0"><div class="wrap">
+<div class="title"><span class="eyebrow">Atmosphere</span><h2>Gallery</h2></div>
+<!-- To use real photos: add <img src="your-photo.jpg" alt="..."> as the first child inside any <figure class="ph"> -->
+<div class="grid">
+<figure class="ph w2 h2" style="--a:rgba(201,164,92,.5);--b:rgba(150,50,80,.5);--x:50%"><b>💍</b><figcaption><small>Weddings</small>Royal Mandap Evenings</figcaption></figure>
+<figure class="ph " style="--a:rgba(240,190,60,.5);--b:rgba(200,110,40,.5);--x:30%"><b>🌼</b><figcaption><small>Pre-Wedding</small>Haldi Ceremony</figcaption></figure>
+<figure class="ph " style="--a:rgba(80,170,110,.5);--b:rgba(40,100,80,.5);--x:70%"><b>🪷</b><figcaption><small>Pre-Wedding</small>Mehndi Night</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(190,70,140,.5);--b:rgba(70,40,150,.5);--x:45%"><b>🎶</b><figcaption><small>Celebrations</small>Sangeet & Dance</figcaption></figure>
+<figure class="ph " style="--a:rgba(235,120,60,.5);--b:rgba(170,40,50,.5);--x:60%"><b>🥁</b><figcaption><small>Wedding Day</small>Baraat & Dhol</figcaption></figure>
+<figure class="ph h2" style="--a:rgba(245,180,80,.5);--b:rgba(160,70,40,.5);--x:50%"><b>🪔</b><figcaption><small>Rituals</small>Varmala & Pheras</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(220,180,100,.5);--b:rgba(120,60,50,.5);--x:30%"><b>🥂</b><figcaption><small>Receptions</small>Grand Reception</figcaption></figure>
+<figure class="ph " style="--a:rgba(230,130,150,.5);--b:rgba(120,50,90,.5);--x:70%"><b>💐</b><figcaption><small>Décor</small>Floral Décor</figcaption></figure>
+<figure class="ph " style="--a:rgba(245,170,60,.5);--b:rgba(90,40,120,.5);--x:45%"><b>🎆</b><figcaption><small>Festivals</small>Diwali Celebrations</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(230,80,110,.5);--b:rgba(240,150,50,.5);--x:60%"><b>💃</b><figcaption><small>Festivals</small>Navratri Garba Nights</figcaption></figure>
+<figure class="ph " style="--a:rgba(220,70,160,.5);--b:rgba(60,140,210,.5);--x:50%"><b>🎨</b><figcaption><small>Festivals</small>Holi Color Parties</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(70,130,220,.5);--b:rgba(30,50,110,.5);--x:30%"><b>🎤</b><figcaption><small>Corporate</small>Conferences & Summits</figcaption></figure>
+<figure class="ph " style="--a:rgba(210,175,95,.5);--b:rgba(60,50,100,.5);--x:70%"><b>🏆</b><figcaption><small>Corporate</small>Award & Gala Nights</figcaption></figure>
+<figure class="ph h2" style="--a:rgba(100,90,230,.5);--b:rgba(200,70,110,.5);--x:45%"><b>🚀</b><figcaption><small>Brand</small>Product Launches</figcaption></figure>
+<figure class="ph " style="--a:rgba(70,170,160,.5);--b:rgba(40,80,120,.5);--x:60%"><b>🤝</b><figcaption><small>Corporate</small>Team Offsites</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(90,120,230,.5);--b:rgba(150,40,160,.5);--x:50%"><b>🎸</b><figcaption><small>Entertainment</small>Live Concerts</figcaption></figure>
+<figure class="ph " style="--a:rgba(190,60,200,.5);--b:rgba(50,60,180,.5);--x:30%"><b>🎧</b><figcaption><small>Parties</small>DJ & Club Nights</figcaption></figure>
+<figure class="ph " style="--a:rgba(230,140,90,.5);--b:rgba(110,40,80,.5);--x:70%"><b>🍸</b><figcaption><small>Parties</small>Cocktail Evenings</figcaption></figure>
+<figure class="ph " style="--a:rgba(240,120,150,.5);--b:rgba(120,70,160,.5);--x:45%"><b>🎂</b><figcaption><small>Private Parties</small>Birthday Bashes</figcaption></figure>
+<figure class="ph w2" style="--a:rgba(245,215,130,.5);--b:rgba(90,70,150,.5);--x:60%"><b>💡</b><figcaption><small>Production</small>Stage, LED & Lights</figcaption></figure>
+<figure class="ph " style="--a:rgba(200,110,70,.5);--b:rgba(60,50,110,.5);--x:50%"><b>🎷</b><figcaption><small>Talent</small>Live Bands & Artists</figcaption></figure>
+<figure class="ph " style="--a:rgba(90,140,220,.5);--b:rgba(160,60,100,.5);--x:30%"><b>🎙️</b><figcaption><small>Talent</small>Anchors & Hosts</figcaption></figure>
+<figure class="ph " style="--a:rgba(225,175,110,.5);--b:rgba(110,70,50,.5);--x:70%"><b>🍽️</b><figcaption><small>Hospitality</small>Fine Dining & Catering</figcaption></figure>
+</div></div></section>
+
+<section class="about" id="celebrations"><div class="wrap" style="display:block">
+<div class="title"><span class="eyebrow">Every occasion</span><h2>Celebrations We Create</h2></div>
+<div class="cards">
+<div class="card"><i>॥</i><h3>Indian Weddings</h3><p>Roka, haldi, mehndi, sangeet, baraat, pheras and reception — each ritual staged with colour, music and tradition.</p></div>
+<div class="card"><i>॥</i><h3>Festive Events</h3><p>Diwali parties, Garba and Dandiya nights, Holi festivals, Lohri and Karva Chauth gatherings.</p></div>
+<div class="card"><i>॥</i><h3>Corporate Experiences</h3><p>Conferences, annual days, dealer meets, award ceremonies, launches and offsite getaways.</p></div>
+<div class="card"><i>॥</i><h3>Parties &amp; Nightlife</h3><p>Birthdays, anniversaries, cocktail evenings, theme parties, DJ nights and farewell bashes.</p></div>
+<div class="card"><i>॥</i><h3>Live Entertainment</h3><p>Concerts, stand-up shows, folk and classical performances, live bands, dancers and anchors.</p></div>
+<div class="card"><i>॥</i><h3>Full Production</h3><p>Stage design, LED walls, truss, sound, lighting, floral décor, catering coordination and guest management.</p></div>
+</div></div></section>
+
+<section id="about" class="about"><div class="wrap">
+<div><span class="eyebrow">About us</span><h2 style="font-size:clamp(30px,5vw,46px);margin:10px 0 18px">Where vision meets spectacle</h2>
+<p>ABSOLUT WORK COMPANY is an event and entertainment company devoted to turning ideas into immersive experiences. From the first concept to the final curtain, every detail is planned with taste, precision and heart.</p>
+<div class="list"><span>Concept &amp; Design</span><span>Production</span><span>Talent Booking</span><span>Venue Styling</span><span>Sound &amp; Light</span><span>On-site Management</span></div></div>
+<div class="grid" style="grid-template-columns:1fr 1fr;grid-auto-rows:190px">
+<figure class="ph h2" style="--a:rgba(201,164,92,.5);--b:rgba(90,50,140,.5)"><figcaption><small>Elegance</small>Every Detail</figcaption></figure>
+<figure class="ph" style="--a:rgba(70,130,220,.5);--b:rgba(30,50,110,.5)"><figcaption><small>Energy</small>Every Stage</figcaption></figure>
+<figure class="ph" style="--a:rgba(220,110,130,.5);--b:rgba(110,40,70,.5)"><figcaption><small>Emotion</small>Every Guest</figcaption></figure>
+</div></div></section>
+
+<footer><div class="wrap">
+<div class="logo">ABSOLUT WORK COMPANY</div>
+<p>G-9, Krishna Apra Business Square, Near Fun Cinema,<br>Netaji Subhash Place, Pitampura, Delhi-110034</p>
+<p><a href="mailto:absolutworkcompany@gmail.com">absolutworkcompany@gmail.com</a></p>
+<p style="font-size:12px;letter-spacing:.15em">© ABSOLUT WORK COMPANY</p>
+</div></footer>
+</body>
+</html>
